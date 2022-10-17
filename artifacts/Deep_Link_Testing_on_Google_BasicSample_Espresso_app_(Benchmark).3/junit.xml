@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="1" package="com.example.android.testing.espresso.BasicSample" tests="1" time="0.308">
+  <!--Espresso test result on SauceLabs-->
+  <testcase classname="com.example.macrobenchmark.ExampleStartupBenchmark" name="startup" status="error">
+    <error>java.lang.AssertionError: ERRORS (not suppressed): DEBUGGABLE
+WARNINGS (suppressed): 
+
+ERROR: Benchmark Target is Debuggable
+    Target package com.example.android.testing.espresso.BasicSample
+    is running with debuggable=true, which drastically reduces
+    runtime performance in order to support debugging features. Run
+    benchmarks with debuggable=false. Debuggable affects execution speed
+    in ways that mean benchmark improvements might not carry over to a
+    real user's experience (or even regress release performance).
+
+While you can suppress these errors (turning them into warnings)
+PLEASE NOTE THAT EACH SUPPRESSED ERROR COMPROMISES ACCURACY
+
+// Sample suppression, in a benchmark module's build.gradle:
+android {
+    defaultConfig {
+        testInstrumentationRunnerArguments[&quot;androidx.benchmark.suppressErrors&quot;] = &quot;DEBUGGABLE&quot;
+    }
+}
+	at androidx.benchmark.ConfigurationErrorKt.checkAndGetSuppressionState(ConfigurationError.kt:124)
+	at androidx.benchmark.macro.MacrobenchmarkKt.checkErrors(Macrobenchmark.kt:95)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmark(Macrobenchmark.kt:126)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmarkWithStartupMode(Macrobenchmark.kt:301)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated(MacrobenchmarkRule.kt:106)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated$default(MacrobenchmarkRule.kt:96)
+	at com.example.macrobenchmark.ExampleStartupBenchmark.startup(ExampleStartupBenchmark.kt:30)</error>
+  </testcase>
+  <system-out>INSTRUMENTATION_STATUS: class=com.example.macrobenchmark.ExampleStartupBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.macrobenchmark.ExampleStartupBenchmark:
+INSTRUMENTATION_STATUS: test=startup
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.macrobenchmark.ExampleStartupBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: ERRORS (not suppressed): DEBUGGABLE
+WARNINGS (suppressed): 
+
+ERROR: Benchmark Target is Debuggable
+    Target package com.example.android.testing.espresso.BasicSample
+    is running with debuggable=true, which drastically reduces
+    runtime performance in order to support debugging features. Run
+    benchmarks with debuggable=false. Debuggable affects execution speed
+    in ways that mean benchmark improvements might not carry over to a
+    real user's experience (or even regress release performance).
+
+While you can suppress these errors (turning them into warnings)
+PLEASE NOTE THAT EACH SUPPRESSED ERROR COMPROMISES ACCURACY
+
+// Sample suppression, in a benchmark module's build.gradle:
+android {
+    defaultConfig {
+        testInstrumentationRunnerArguments[&quot;androidx.benchmark.suppressErrors&quot;] = &quot;DEBUGGABLE&quot;
+    }
+}
+	at androidx.benchmark.ConfigurationErrorKt.checkAndGetSuppressionState(ConfigurationError.kt:124)
+	at androidx.benchmark.macro.MacrobenchmarkKt.checkErrors(Macrobenchmark.kt:95)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmark(Macrobenchmark.kt:126)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmarkWithStartupMode(Macrobenchmark.kt:301)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated(MacrobenchmarkRule.kt:106)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated$default(MacrobenchmarkRule.kt:96)
+	at com.example.macrobenchmark.ExampleStartupBenchmark.startup(ExampleStartupBenchmark.kt:30)
+
+INSTRUMENTATION_STATUS: stream=
+Error in startup(com.example.macrobenchmark.ExampleStartupBenchmark):
+java.lang.AssertionError: ERRORS (not suppressed): DEBUGGABLE
+WARNINGS (suppressed): 
+
+ERROR: Benchmark Target is Debuggable
+    Target package com.example.android.testing.espresso.BasicSample
+    is running with debuggable=true, which drastically reduces
+    runtime performance in order to support debugging features. Run
+    benchmarks with debuggable=false. Debuggable affects execution speed
+    in ways that mean benchmark improvements might not carry over to a
+    real user's experience (or even regress release performance).
+
+While you can suppress these errors (turning them into warnings)
+PLEASE NOTE THAT EACH SUPPRESSED ERROR COMPROMISES ACCURACY
+
+// Sample suppression, in a benchmark module's build.gradle:
+android {
+    defaultConfig {
+        testInstrumentationRunnerArguments[&quot;androidx.benchmark.suppressErrors&quot;] = &quot;DEBUGGABLE&quot;
+    }
+}
+	at androidx.benchmark.ConfigurationErrorKt.checkAndGetSuppressionState(ConfigurationError.kt:124)
+	at androidx.benchmark.macro.MacrobenchmarkKt.checkErrors(Macrobenchmark.kt:95)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmark(Macrobenchmark.kt:126)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmarkWithStartupMode(Macrobenchmark.kt:301)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated(MacrobenchmarkRule.kt:106)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated$default(MacrobenchmarkRule.kt:96)
+	at com.example.macrobenchmark.ExampleStartupBenchmark.startup(ExampleStartupBenchmark.kt:30)
+
+INSTRUMENTATION_STATUS: test=startup
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.308
+There was 1 failure:
+1) startup(com.example.macrobenchmark.ExampleStartupBenchmark)
+java.lang.AssertionError: ERRORS (not suppressed): DEBUGGABLE
+WARNINGS (suppressed): 
+
+ERROR: Benchmark Target is Debuggable
+    Target package com.example.android.testing.espresso.BasicSample
+    is running with debuggable=true, which drastically reduces
+    runtime performance in order to support debugging features. Run
+    benchmarks with debuggable=false. Debuggable affects execution speed
+    in ways that mean benchmark improvements might not carry over to a
+    real user's experience (or even regress release performance).
+
+While you can suppress these errors (turning them into warnings)
+PLEASE NOTE THAT EACH SUPPRESSED ERROR COMPROMISES ACCURACY
+
+// Sample suppression, in a benchmark module's build.gradle:
+android {
+    defaultConfig {
+        testInstrumentationRunnerArguments[&quot;androidx.benchmark.suppressErrors&quot;] = &quot;DEBUGGABLE&quot;
+    }
+}
+	at androidx.benchmark.ConfigurationErrorKt.checkAndGetSuppressionState(ConfigurationError.kt:124)
+	at androidx.benchmark.macro.MacrobenchmarkKt.checkErrors(Macrobenchmark.kt:95)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmark(Macrobenchmark.kt:126)
+	at androidx.benchmark.macro.MacrobenchmarkKt.macrobenchmarkWithStartupMode(Macrobenchmark.kt:301)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated(MacrobenchmarkRule.kt:106)
+	at androidx.benchmark.macro.junit4.MacrobenchmarkRule.measureRepeated$default(MacrobenchmarkRule.kt:96)
+	at com.example.macrobenchmark.ExampleStartupBenchmark.startup(ExampleStartupBenchmark.kt:30)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
+</system-out>
+</testsuite>

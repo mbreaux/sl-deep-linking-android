@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="com.example.android.testing.espresso.BasicSample" tests="5" time="15.802">
+  <!--Espresso test result on SauceLabs-->
+  <testcase classname="com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest" name="changeText_newActivity" status="success"/>
+  <testcase classname="com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest" name="changeText_sameActivity" status="success"/>
+  <testcase classname="com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest" name="changeText_newActivity" status="success"/>
+  <testcase classname="com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest" name="changeText_sameActivity" status="success"/>
+  <testcase classname="com.example.android.testing.espresso.BasicSample.DeepLinkingTest" name="should_launch_secondActivity_when_deepLinkingToActivityTwo" status="success"/>
+  <system-out>INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest:
+INSTRUMENTATION_STATUS: test=changeText_newActivity
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=changeText_newActivity
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=changeText_sameActivity
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorKtTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=changeText_sameActivity
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest:
+INSTRUMENTATION_STATUS: test=changeText_newActivity
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=changeText_newActivity
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=changeText_sameActivity
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.ChangeTextBehaviorTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=changeText_sameActivity
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.DeepLinkingTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+com.example.android.testing.espresso.BasicSample.DeepLinkingTest:
+INSTRUMENTATION_STATUS: test=should_launch_secondActivity_when_deepLinkingToActivityTwo
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.example.android.testing.espresso.BasicSample.DeepLinkingTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=should_launch_secondActivity_when_deepLinkingToActivityTwo
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 15.802
+
+OK (5 tests)
+
+
+INSTRUMENTATION_CODE: -1
+</system-out>
+</testsuite>

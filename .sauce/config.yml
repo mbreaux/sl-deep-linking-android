@@ -1,0 +1,31 @@
+apiVersion: v1alpha
+kind: espresso
+sauce:
+  region: us-west-1
+  # Controls how many suites are executed at the same time (sauce test env only).
+  concurrency: 10
+  metadata:
+    tags:
+      - e2e
+    build: Release $CI_COMMIT_SHORT_SHA
+espresso:
+  app: ./app/build/intermediates/apk/debug/app-debug.apk
+  testApp: ./app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
+suites:
+  - name: "Deep Link Testing on Google BasicSample Espresso app"
+    emulators:
+      - name: "Android GoogleAPI Emulator"
+        platformVersions:
+          - "12.0"
+  - name: "Deep Link Testing on Google BasicSample Espresso app (Benchmark)"
+    testApp: ./macrobenchmark/build/intermediates/apk/benchmark/macrobenchmark-benchmark.apk
+    emulators:
+      - name: "Android GoogleAPI Emulator"
+        platformVersions:
+          - "12.0"
+artifacts:
+  download:
+    when: always
+    match:
+      - junit.xml
+    directory: ./artifacts/

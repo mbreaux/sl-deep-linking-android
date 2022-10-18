@@ -9,7 +9,7 @@ sauce:
       - e2e
     build: Release $CI_COMMIT_SHORT_SHA
 espresso:
-  app: ./app/build/intermediates/apk/debug/app-debug.apk
+  app: ./app/apks/release/app-release.apk
   testApp: ./app/build/intermediates/apk/androidTest/debug/app-debug-androidTest.apk
 suites:
   - name: "Deep Link Testing on Google BasicSample Espresso app"
@@ -18,7 +18,8 @@ suites:
         platformVersions:
           - "12.0"
   - name: "Deep Link Testing on Google BasicSample Espresso app (Benchmark)"
-    testApp: ./macrobenchmark/build/intermediates/apk/benchmark/macrobenchmark-benchmark.apk
+    app: ./app/apks/release/app-release.apk
+    testApp: ./app/apks/benchmark/app-benchmark.apk
     emulators:
       - name: "Android GoogleAPI Emulator"
         platformVersions:
